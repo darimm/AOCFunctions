@@ -1,3 +1,3 @@
-module github.com/darimm/AOC2020/AOCFunctions
+module github.com/darimm/AOCFunctions
 
 go 1.17
