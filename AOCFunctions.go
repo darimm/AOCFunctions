@@ -36,3 +36,5 @@ func ReadFile(fileName string) ([]string, error) {
 	}
 	return strings.Split(string(fileBytes), "\n"), nil
 }
+
+//trivial change
