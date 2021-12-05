@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+//MinInt returns the mminimum value among a provided list of integers
 func MinInt(vars ...int) int {
 	min := vars[0]
 
@@ -17,7 +18,8 @@ func MinInt(vars ...int) int {
 	return min
 }
 
-func Maxint(vars ...int) int {
+//MaxInt returns the maxiumum value among a provided list of integers
+func MaxInt(vars ...int) int {
 	max := vars[0]
 
 	for _, i := range vars {
@@ -29,6 +31,7 @@ func Maxint(vars ...int) int {
 	return max
 }
 
+//ReadFile reads the input.txt and parses it into a slice of strings
 func ReadFile(fileName string) ([]string, error) {
 	fileBytes, err := ioutil.ReadFile(fileName)
 	if err != nil {
@@ -36,5 +39,3 @@ func ReadFile(fileName string) ([]string, error) {
 	}
 	return strings.Split(string(fileBytes), "\n"), nil
 }
-
-//trivial change
